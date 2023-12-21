@@ -1,0 +1,85 @@
+.home {
+    background-image: url('img.jpg'); /* Replace with the actual filename of your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .intro {
+    font-family:'Rubik Doodle Shadow';
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(189, 233, 123);
+    font-size: 50px;
+  }
+  
+  .word {
+    opacity: 0;
+    transform: translateY(1em);
+    display: inline-block;
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .word.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .description {
+    position: absolute;
+    top: 45%; /* Adjusted top to position just below the intro text */
+    left: 35%; /* Adjusted left to center horizontally */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-top: 20px; /* Adjusted padding as needed */
+    color: white;
+    font-size: 30px; /* Adjusted font size as needed */
+  }
+  .links ul {
+    display: flex; /* Display the list items in a row */
+    justify-content: space-around;
+    list-style-type: none;
+    padding-left: 50px;
+    position: absolute;
+    top: 60%;
+    left: 35%; /* Center the list horizontally */
+    transform: translateX(-50%);
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .links li {
+    margin: 0 10px; /* Adjust the margin to add space between logos */
+    position: relative;
+  }
+  
+  .links img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .links a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .links a:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    display: inline-block;
+  }
