@@ -38,6 +38,7 @@
   a:hover {
     color: burlywood;
     transform: scale(1.1); /* Scale the link on hover */
+    font-size: 25px;
   }
   
   /* Media Query for Mobile Devices */
