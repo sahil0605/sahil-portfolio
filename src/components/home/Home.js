@@ -4,6 +4,7 @@ import github from "./github-logo (1).png";
 import resume from "./resume.png";
 import "./Home.css";
 
+
 function Home() {
   useEffect(() => {
     const introText = document.querySelector(".intro");
@@ -79,7 +80,9 @@ function Home() {
           </li>
         </ul>
       </div>
+     
     </div>
+    
   );
 }
 

@@ -28,7 +28,7 @@ function Navbar() {
         {/* Navigation list */}
         <ul className={`list ${isMobileMenuOpen ? "show" : ""}`}>
           <li>
-            <Link to="/home" onClick={toggleMobileMenu}>
+            <Link to="/" onClick={toggleMobileMenu}>
               Home
             </Link>
           </li>
