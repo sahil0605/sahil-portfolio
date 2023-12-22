@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
 import logoImage from "./logo.png";
 
 function Navbar() {
@@ -10,12 +9,20 @@ function Navbar() {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setMobileMenuOpen(false);
+    }
+  };
+
   return (
     <div className="navbar">
       <div className="logo">
-        <Link to="/home">
-          <img src={logoImage} alt="Logo" />
-        </Link>
+        <a href="#home">
+          <img src={logoImage} alt="Logo" onClick={() => scrollToSection("home")} />
+        </a>
       </div>
       <div>
         {/* Mobile menu button */}
@@ -28,29 +35,29 @@ function Navbar() {
         {/* Navigation list */}
         <ul className={`list ${isMobileMenuOpen ? "show" : ""}`}>
           <li>
-            <Link to="/" onClick={toggleMobileMenu}>
+            <a href="#home" onClick={() => scrollToSection("home")}>
               Home
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/experience" onClick={toggleMobileMenu}>
+            <a href="#experience" onClick={() => scrollToSection("experience")}>
               Experience
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/skills" onClick={toggleMobileMenu}>
+            <a href="#skills" onClick={() => scrollToSection("skills")}>
               Skills
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/projects" onClick={toggleMobileMenu}>
+            <a href="#projects" onClick={() => scrollToSection("projects")}>
               Projects
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/contact" onClick={toggleMobileMenu}>
+            <a href="#contact" onClick={() => scrollToSection("contact")}>
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

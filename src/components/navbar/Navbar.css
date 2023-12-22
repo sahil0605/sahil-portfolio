@@ -83,4 +83,18 @@
       margin: 6px 0;
     }
   }
+  /* Add styles for hidden class */
+.navbar.hidden {
+  transform: translateY(-90px);
+  transition: transform 0.3s;
+}
+
+/* Keep the existing styles for the visible class */
+.navbar.visible {
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+
+/* Your existing styles... */
+
   

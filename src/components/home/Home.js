@@ -42,7 +42,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="home">
+    <div className="home" id="home">
       <p className="intro">Full Stack Developer ...</p>
       <div className="description">
         I am a Dedicated Full Stack Developer with expertise in MERN stack

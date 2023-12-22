@@ -8,10 +8,12 @@ function App() {
   return (
     <BrowserRouter className="App">
       <Navbar />
-      <Routes>
+      <Home></Home>
+      <Experience></Experience>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/experience" element={<Experience />} />
-      </Routes>
+      </Routes> */}
     </BrowserRouter>
   );
 }
