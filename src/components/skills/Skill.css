@@ -1,0 +1,91 @@
+#skills {
+    height: 100vh;
+    background-color: #242424;
+  }
+  
+  .heading {
+    color: burlywood;
+    text-align: center;
+  }
+  
+  .main {
+    display: flex;
+  }
+  
+  .pic {
+    width: 1000px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .pic img {
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 5px;
+    width: 400px;
+    height: 500px;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s; /* Add transitions for smooth scaling and filter effect */
+  }
+  
+  .pic img:hover {
+    transform: scale(1.1); /* Scale the image slightly on hover */
+    filter: grayscale(100%); /* Convert the image to black and white */
+  }
+  
+  .item-list {
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .list-item {
+    margin-top: 20px;
+    margin-left: 2px;
+    width: 20%;
+    margin-bottom: 10px;
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 150px;
+    background-color: #bdc3c7;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .item-list p {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .list-item:hover {
+    background-color: burlywood; /* Change background color on hover */
+  }
+  
+  .list-item:hover::before {
+    content: attr(data-skill); /* Display skill's name over the box */
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+  }
+  
+  .list-item img {
+    padding-left: 40px;
+    padding-top: 30px;
+    height: 75px;
+    width: 85px;
+  }
+  
+  .list-item:hover {
+    transform: scale(1.1);
+    filter: grayscale(100%); /* Scale the image slightly on hover */
+  }
+  

@@ -24,6 +24,12 @@ function Navbar() {
           <img src={logoImage} alt="Logo" onClick={() => scrollToSection("home")} />
         </a>
       </div>
+      
+      {/* Your name section */}
+      <div className="name-section">
+        <p className="name">Sahil Singh Solanki</p>
+      </div>
+
       <div>
         {/* Mobile menu button */}
         <div className="mobile-menu-button" onClick={toggleMobileMenu}>

@@ -1,68 +1,90 @@
-#experience{
-     height: 100vh;
-     background-color: #242424;
-     color: white;
+#experience {
+  height: 100vh;
+  background-color: #242424;
+  color: white;
 }
+
 .experience-container {
-    position: relative;
-    padding: 20px;
-  }
+  position: relative;
+  padding: 20px;
+}
+
+.box {
+  margin: 40px;
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black; /* Text color */
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  border-radius: 8px; /* Adjust the border-radius for a subtle arc effect */
+}
+
+.company-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.role {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.role-details {
+  list-style:circle;
+  padding: 25px;
+  /* text-align: left; */
+  /* align-items: center; */
   
-  .box {
-    margin: 40px;
-    position: absolute;
-    width: 600px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white; /* Text color */
-    font-weight: bold;
-    font-size: 16px;
-    transition: background-color 0.3s;
-    border-radius: 8px; /* Adjust the border-radius for a subtle arc effect */
-  }
-  
-  .diagonal-top-left {
-    top: 0;
-    left: 0;
-    background-color: #dfe4ea;
-  }
-  
-  .diagonal-bottom-right {
-    bottom: 0;
-    right: 0;
-    background-color: #dfe4ea;
-  }
-  
-  /* Add small arcs at the edges */
-  .diagonal-top-left::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 15px;
-    height: 15px;
-    background-color: #dfe4ea;
-    border-top-left-radius: 8px;
-  }
-  
-  .diagonal-bottom-right::after {
-    
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 15px;
-    height: 15px;
-    background-color: #dfe4ea;
-    border-bottom-right-radius: 8px;
-  }
-  
-  /* Hover effect */
-  .box:hover {
-    background-color: #bdc3c7;
-    cursor: pointer;
-  }
-  
-  
+}
+.role-details li{
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.diagonal-top-left {
+  top: 0;
+  left: 0;
+  background-color:#bdc3c7;
+}
+
+.diagonal-bottom-right {
+  bottom: 0;
+  right: 0;
+  background-color: #bdc3c7;
+}
+
+/* Add small arcs at the edges */
+.diagonal-top-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #dfe4ea;
+  border-top-left-radius: 8px;
+}
+
+.diagonal-bottom-right::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #dfe4ea;
+  border-bottom-right-radius: 8px;
+}
+
+/* Hover effect */
+.box:hover {
+  background-color: burlywood;
+  cursor: pointer;
+}

@@ -71,7 +71,7 @@ function Home() {
           </li>
           <li>
             <a
-              href="https://docs.google.com/document/d/1HUOrRbkcPEMp4su96sPYg_bKhUSy5Poau6D8Z5bKh-c/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1RM1KFme2b1PINNnxnJtpApmUMAdSWH3g/view?usp=sharing"
               target="/"
               data-tooltip="Resume"
             >
