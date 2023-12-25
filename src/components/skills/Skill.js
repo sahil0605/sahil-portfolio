@@ -17,9 +17,10 @@ import sahil from './pic.jpg'
 function Skill() {
   return (
     <div id='skills'>
-      <h1 className='heading'>My Skills</h1>
+      
       <div className='main'>
       <div>
+      <h1 className='heading'>My Skills</h1>
       <ul className='item-list'>
         <li className='list-item' >
           <img src={c} alt='C++'></img>

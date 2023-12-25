@@ -3,6 +3,7 @@ import './Experience.css';
 
 function Experience() {
   return (
+    <div >
     <div id='experience' className='experience-container'>
       {/* Box 1 - Diagonal Top Left */}
       <div className='box diagonal-top-left'>
@@ -28,6 +29,7 @@ function Experience() {
 .</li>
         </ul>
       </div>
+    </div>
     </div>
   );
 }

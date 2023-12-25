@@ -3,6 +3,7 @@ import leetcode from "./leetcode.webp";
 import github from "./github-logo (1).png";
 import resume from "./resume.png";
 import "./Home.css";
+import myPic from './pic.jpg'
 
 
 function Home() {
@@ -42,7 +43,11 @@ function Home() {
   }, []);
 
   return (
-    <div className="home" id="home">
+    <div  id="home">
+      <div className="photo">
+        <img src={myPic}></img>
+      </div>
+      <div className="home">
       <p className="intro">Full Stack Developer ...</p>
       <div className="description">
         I am a Dedicated Full Stack Developer with expertise in MERN stack
@@ -58,6 +63,7 @@ function Home() {
               data-tooltip="LeetCode"
             >
               <img src={leetcode} alt="LeetCode" />
+              <p>Leetcode</p>
             </a>
           </li>
           <li>
@@ -67,6 +73,7 @@ function Home() {
               data-tooltip="GitHub"
             >
               <img src={github} alt="GitHub" />
+              <p>Github</p>
             </a>
           </li>
           <li>
@@ -76,9 +83,11 @@ function Home() {
               data-tooltip="Resume"
             >
               <img src={resume} alt="Resume" />
+              <p>Resume</p>
             </a>
           </li>
         </ul>
+      </div>
       </div>
      
     </div>
