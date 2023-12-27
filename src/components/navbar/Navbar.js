@@ -1,3 +1,4 @@
+// Navbar.js
 import React, { useState } from "react";
 import "./Navbar.css";
 import logoImage from "./logo.png";
@@ -30,8 +31,8 @@ function Navbar() {
         <p className="name">Sahil Singh Solanki</p>
       </div>
 
-      <div>
-        {/* Mobile menu button */}
+      <div className="mobile-menu">
+        {/* Mobile menu toggler button */}
         <div className="mobile-menu-button" onClick={toggleMobileMenu}>
           <span></span>
           <span></span>

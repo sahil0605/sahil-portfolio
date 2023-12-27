@@ -61,16 +61,16 @@
   @media only screen and (max-width: 600px) {
     .list {
       display: none;
-      flex-direction: column;
+      /* flex-direction: column; */
       position: absolute;
-      top: 70px;
+      top: 80px;
       left: 0;
       width: 100%;
       background-color: rgb(31, 30, 30);
     }
   
     .list a {
-      padding: 15px;
+      padding: 10px;
       text-align: center;
       width: 100%;
       display: block;
@@ -93,7 +93,7 @@
     }
   
     .mobile-menu-button span {
-      height: 4px;
+      height: 2px;
       width: 30px;
       background-color: white;
       margin: 6px 0;

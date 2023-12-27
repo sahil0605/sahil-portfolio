@@ -12,7 +12,7 @@ import boot from './bootstrap.png'
 import git from './git.png'
 import mysql from './mysql.png'
 import sql from './sql-server.png'
-import sahil from './pic.jpg'
+import sahil from './mypic.jpeg'
 
 function Skill() {
   return (
