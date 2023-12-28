@@ -57,47 +57,6 @@
     font-size: 20px;
   }
   
-  /* Media Query for Mobile Devices */
-  @media only screen and (max-width: 600px) {
-    .list {
-      display: none;
-      /* flex-direction: column; */
-      position: absolute;
-      top: 80px;
-      left: 0;
-      width: 100%;
-      background-color: rgb(31, 30, 30);
-    }
-  
-    .list a {
-      padding: 10px;
-      text-align: center;
-      width: 100%;
-      display: block;
-      transition: transform 0.3s; /* Add a smooth transition effect */
-    }
-  
-    .list.show {
-      display: flex;
-    }
-  
-    .list a:hover {
-      transform: scale(1.1); /* Scale the link on hover in mobile menu */
-    }
-  
-    /* Styles for the mobile menu button */
-    .mobile-menu-button {
-      display: flex;
-      flex-direction: column;
-      cursor: pointer;
-    }
-  
-    .mobile-menu-button span {
-      height: 2px;
-      width: 30px;
-      background-color: white;
-      margin: 6px 0;
-    }
-  }
+
  
   
